@@ -4,7 +4,7 @@ from django.db import models
 
 class Equipment(models.Model):
     equipment_type = models.CharField(max_length=32)
-    equipment_name = models.CharField(max_length=32)
+    equipment_name = models.CharField(max_length=128)
     count = models.IntegerField()
     description = models.TextField()
     original_cost = models.FloatField()

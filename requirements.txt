@@ -2,4 +2,4 @@ asgiref==3.4.1
 Django==3.2.13
 Jinja2>=2.11.3
 pyyaml>=5.4
-equests>=2.20.0
+requests>=2.20.0

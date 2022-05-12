@@ -1,1 +1,21 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h2>Equipment Inventory</h2>
+{% if object_list %}
+<div class='container'>
+{% for equipment in object_list %}
+    <div class="row">
+        <div class="col-sm">
+            {{ equipment }}</br >
+            <img src="{% static equipment.image %}"
+        </div>
+        <div class="col-sm-8" class="align-self-end">
+            {{ equipment.description }}
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endif %}
+{% endblock %}

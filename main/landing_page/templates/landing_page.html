@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div
+  class="bg-image container"
+  style="background-image: url('{% static 'WallOfSound.jpg' %}')"
+></div>
+<div class='container'>
+    <img src="{% static 'WallOfSound.jpg' %}" class="img-fluid" alt="Responsive image"/>
+</div>
+{% endblock %}

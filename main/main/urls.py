@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rentals.views import EquipmentListView
+from landing_page.views import LandingPage
 
 urlpatterns = [
+    path('', LandingPage.as_view()),
     path('admin/', admin.site.urls),
-    path('inventory/', EquipmentListView.as_view())
+    path('rentals/', EquipmentListView.as_view())
 ]

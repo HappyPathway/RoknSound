@@ -2,12 +2,17 @@
   pip:
     requirements: /tmp/requirements.txt
 
-- name: stat path
-  stat: path=/vagrant/main
-  register: django_path
+- name: /usr/bin/python3 -m pip install --upgrade pip
+  shell: /usr/bin/python3 -m pip install --upgrade pip
 
-- name: startproject
-  ansible.builtin.shell: django-admin startproject main
-  when: not django_path.stat.exists
-  args:
-    chdir: /vagrant
+- name: /usr/bin/python3 -m pip install --upgrade Pillow
+  shell: /usr/bin/python3 -m pip install --upgrade Pillow
+# - name: stat path
+#   stat: path=/vagrant/main
+#   register: django_path
+
+# - name: startproject
+#   ansible.builtin.shell: django-admin startproject main
+#   when: not django_path.stat.exists
+#   args:
+#     chdir: /vagrant

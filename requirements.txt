@@ -3,3 +3,4 @@ Django==3.2.13
 Jinja2>=2.11.3
 pyyaml>=5.4
 requests>=2.20.0
+django-reservation
